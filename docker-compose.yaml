@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: ./compose/nuxtjs/Dockerfile
+    image: app_local_nuxtjs
+    volumes:
+      - ./app:/app
+    env_file:
+      - ./compose/nuxtjs/.env.example
+    ports:
+      - '3000:3000'
