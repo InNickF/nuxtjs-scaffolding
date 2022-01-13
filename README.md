@@ -131,7 +131,7 @@ Here is the general folder information:
 |   |   |
 |   |   ├── layouts/: Application UI layouts.
 |   |   ├── modules/: Contains isolated app modules.
-|   |   ├── pages/: Nextjs file routing system
+|   |   ├── pages/: Nuxtjs file routing system
 |   |   ├── services/: Global HTTP data fetching and management system.
 |   |   ├── static/: Contains files that likely won't be changed.
 |   |   └── store/: Global state management system (Vuex).
@@ -145,7 +145,7 @@ Here is the general folder information:
 │   ├── .prettierrc: Prettier configuration (Formatter).
 │   ├── Dockerfile: Production app image.
 │   ├── jest.config.js: Jest configuration (Test framework).
-│   ├── nuxt.config.js: NextJS Configuration.
+│   ├── nuxt.config.js: NuxtJS Configuration.
 │   ├── package.json: Dependencies file.
 │   └── tsconfig.json: Typescript configuration.
 │
@@ -192,7 +192,7 @@ There are two ways to create a production build for this app.
 
 1. Docker image: There is a production docker image inside `./app` folder (`./app/Dockerfile`) to build it and run it with any container orchestration software (Like K8s) and our recommendation is create a CD pipelines to do this.
 
-2. Go to `./app` folder and follow the official NextJS [deploy documentation](https://nuxtjs.org/docs/get-started/commands/#production-deployment) for manually deploy.
+2. Go to `./app` folder and follow the official NuxtJS [deploy documentation](https://nuxtjs.org/docs/get-started/commands/#production-deployment) for manually deploy.
 
 ## Authors
 
