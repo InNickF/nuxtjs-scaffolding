@@ -197,4 +197,4 @@ There are two ways to create a production build for this app.
 ## Authors
 
 - Nick Fuenmayor ([@NickFuenmayor\_](https://twitter.com/NickFuenmayor_)) – [Github](https://github.com/InNickF)
-- Jesus Blanco ([Github](https://github.com/JD154)
+- Jesus Blanco ([Github](https://github.com/JD154))
