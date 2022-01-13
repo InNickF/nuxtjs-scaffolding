@@ -110,40 +110,42 @@ Here is the general folder information:
 ```
 .
 ├── compose/: Docker compose files (Only develop environment).
-|   └── nextjs/: Necessary docker files to run develop environment with docker-compose.
+|   └── nuxtjs/: Necessary docker files to run develop environment with docker-compose.
 |       ├── env.example: Environment variables to run with docker compose.
 │       ├── Dockerfile: Development app image.
 |       └── entrypoint.sh: Bash commands to run before CMD command in Docker image.
 |
 |
 ├── app/: Folder with app's code.
-│   ├── public/: Static files to be serve by web server.
 │   ├── src/: Application source code.
 |   |   ├── __tests__/: Jest global test folder.
+|   |   ├── assets/: Un-compiled assets such as images, or fonts..
 |   |   ├── commons/: Common code that is reusable cross the entire app.
-|   |   |   ├── assets/: Static files to be imported inside components.
 |   |   |   ├── components/: Common and base components to reuse across entire app.
 |   |   |   ├── domain/: business logic (Pure JavaScript/TypeScript)
-|   |   |   ├── hooks/: reusable ReactJS Hooks.
-|   |   |   ├── layouts/: Application UI layouts.
+|   |   |   ├── mixins/: reusable VueJS mixins.
 |   |   |   ├── styles/: CSS folder
 |   |   |   ├── typing/: TypeScript interfaces and types.
 |   |   |   └── utils/: Helpers or utilities.
 |   |   |
 |   |   |
+|   |   ├── layouts/: Application UI layouts.
 |   |   ├── modules/: Contains isolated app modules.
 |   |   ├── pages/: Nextjs file routing system
 |   |   ├── services/: Global HTTP data fetching and management system.
-|   |   └── store/: Global state management system (Redux).
+|   |   ├── static/: Contains files that likely won't be changed.
+|   |   └── store/: Global state management system (Vuex).
 |   |        └── modules/: Global app modules.
 |   |
 |   |
-│   ├── .dockerignore:
+│   ├── .babelrc: Babel configuration (Transpiler).
+│   ├── .dockerignore: Excludes files and/or directories to be build in the image.
 │   ├── .eslintrc.json: ESlint configuration (Linter).
-│   ├── .prettierignore: Excludes files to be formatted.
+│   ├── .prettierignore: Excludes and/or directories to be formatted.
+│   ├── .prettierrc: Prettier configuration (Formatter).
 │   ├── Dockerfile: Production app image.
-│   ├── next-env.d.ts: NextJs types.
-│   ├── next.config.js: NextJS Configuration.
+│   ├── jest.config.js: Jest configuration (Test framework).
+│   ├── nuxt.config.js: NextJS Configuration.
 │   ├── package.json: Dependencies file.
 │   └── tsconfig.json: Typescript configuration.
 │
