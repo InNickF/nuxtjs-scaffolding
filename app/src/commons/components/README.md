@@ -14,7 +14,7 @@ componentName/: Component folder exposing index file.
 |  ├── typing/: Extra TypeScript interfaces and types (If you need it).
 |  └── utils/: Specific component utils.
 |
-└── index.tsx: Component exported.
+└── index.vue: Component exported.
 ```
 
 ## Component categories
