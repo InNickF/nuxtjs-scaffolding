@@ -11,13 +11,10 @@ componentName/: Component folder exposing index file.
 |  |                (Each sub-component respect the component folder architecture).
 |  ├── domain/: Business logic for component (Pure JavaScript/TypeScript).
 |  ├── mixins/: Reusable VueJS mixins.
-|  ├── typing/: Extra TypeScript interfaces and types.
+|  ├── typing/: Extra TypeScript interfaces and types (If you need it).
 |  └── utils/: Specific component utils.
 |
-|
-├── index.tsx: Component exported.
-├── props.ts: Props typing.
-└── style.css: Component css styles.
+└── index.tsx: Component exported.
 ```
 
 ## Component categories
